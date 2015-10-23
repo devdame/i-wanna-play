@@ -39,5 +39,9 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'debugger', group: [:development, :test]
 
 
-gem 'pry'
-
+group :development, :test do
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-rails'
+  gem 'pry'
+  gem 'faker'
+end
